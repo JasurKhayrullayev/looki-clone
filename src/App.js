@@ -1,25 +1,31 @@
-import logo from './logo.svg';
 import './App.css';
+import { RouterProvider } from 'react-router-dom';
+import {routes} from "./router"
+import Footer from './components/Footer/Footer';
+import MainHeader from './components/MainHeader/MainHeader';
+import { Routes,Route } from 'react-router-dom';
+import Login from './components/Login/Login';
+import Home from './pages/home/Home';
+import Layout from "./layouts/RootLayOuts.jsx"
+import { useState } from 'react';
+import Protected from './routes/protected';
+import Cart from './pages/Cart/Cart';
 
 function App() {
+  const [login,setLogin]=useState(false);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes>
+      <Route path='/' element={<Login setLogin={setLogin}/>}/>
+      <Route element={<Protected login={login}/>}>
+        <Route element={<Layout/>}>
+          <Route path='/home' element={<Home/>}/>
+          <Route path='/cart' element={<Cart/>}/>
+        </Route>
+      </Route>
+    </Routes>
   );
 }
+
 
 export default App;

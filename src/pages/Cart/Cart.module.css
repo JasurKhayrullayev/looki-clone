@@ -1,0 +1,65 @@
+.cart__container{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F6F6F6;
+    padding: 109px 0;
+}
+
+.cart__title{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 38px;
+    color: #111111;
+    margin-bottom: 23px;
+}
+
+.cart__line{
+    width: 60px;
+    height: 2px;
+    margin-bottom: 45px;
+}
+
+.cart__link-home{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    color: #111111;
+    margin-right: 10px;
+}
+
+.cart__link-cart{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    color: #707070;
+    margin-left: 10px;
+}
+
+.cart__item{
+    margin: 0 auto;
+    padding: 54px 40px;
+    max-width: 1400px;
+}
+
+.cart__item-title{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 38px;
+    color: #111111;
+    margin-bottom: 57px;
+}
+
+.cart__item-img{
+    margin-bottom: 79px;
+}

@@ -1,0 +1,85 @@
+.header__body{
+    background-color:black;
+}
+
+.header__top-container{
+    margin: 0 auto;
+    padding: 15px 40px;
+    max-width: 1400px;
+    display: flex;
+}
+
+.header__top-nav{
+    margin-right: 66px;
+}
+
+.header__top-link{
+    margin-right: 25px;
+    width: 30px;
+    height: 30px;
+}
+
+.header__top-link:last-child{
+    margin-right: 0;
+}
+
+.header__tel{
+    display: flex;
+    align-items:center;
+    cursor: pointer;
+}
+
+.header__tel-img{
+    width: 30px;
+    height: 30px;
+    margin-right: 11px;
+}
+
+.header__tel-num{
+    color: white;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+}
+
+.header__option{
+    display: flex;
+    align-items: center;
+    margin-left: 631px;
+}
+
+.header__option-link{
+    color: white;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    text-transform: capitalize;
+    margin-right: 42px;
+}
+
+.header__option-money{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    color:white;
+    background-color:black;
+    border: none;
+    margin-right: 42px;
+}
+
+.header__option-lang{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    color:white;
+    background-color:black;
+    border: none;
+}
